@@ -1,0 +1,369 @@
+/* Import a font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Satisfy&display=swap');
+/* Background elements */
+.backgroundImg{
+    position: absolute;
+    opacity: 0.12;
+}
+.bear {
+    z-index: 1;
+    left: -5%;
+    width: 35%;
+    top: -2%;
+    transform: rotate(-45deg);
+    animation: bearAnimation 12s ease-in-out infinite;
+}
+.watch {
+    z-index: 2;
+    left: 38%;
+    width: 25%;
+    top: -18%;
+    transform: rotate(-45deg);
+    animation: watchAnimation 12s ease-in-out infinite;
+}
+.rings {
+    z-index: 3;
+    width: 20%;
+    right: -3%;
+    bottom: -8%;
+    animation: ringsAnimation 8s ease-in-out infinite;
+}
+.purse {
+    z-index: 4;
+    width: 32%;
+    left: 40%;
+    bottom: -55%;
+    transform: rotate(45deg);
+    animation: purseAnimation 12s ease-in-out infinite;
+}
+.keyChain {
+    z-index: 5;
+    width: 25%;
+    right: 3%;
+    top: -20%;
+    animation: keyChainAnimation 12s ease-in-out infinite;
+}
+
+
+/* Css for home */
+#topSection{
+    background-color: #fbf8ed;
+    overflow: hidden;
+    position: relative;
+    padding: min(24px, 2%);
+    align-content: center;
+    border-bottom: 3px ridge #FFAA42;
+    height: 35vw;
+}
+#contentCard{
+    min-width: 38vw;
+    max-width: 55vw;
+    text-align: center;
+    padding: min(32px, 2%);
+    border-radius: 2vw;
+    margin-left: 22%;
+    color:  #073376;
+}
+h1{
+    font-size: clamp(16px, 4vw, 120px) !important;
+    letter-spacing: -3%;
+    font-family: 'Merriweather';
+}
+#cardText{
+    font-size: clamp(12px, 1.5vw, 48px) !important;
+}
+/* Carousel Section Css */
+#bodyContent{
+    display: flex;
+    align-items: center;
+}
+#carouselContainer{
+    flex: 3;
+}
+.carouselImage{
+    height: 35vw;
+    object-fit: cover;
+}
+#logoContainer{
+    flex: 1;
+    text-align: center;
+    height:35vw;
+    align-content: center;
+    overflow: hidden;
+}
+.businessLogo {
+    width: 90%;
+    animation: logoAnimation 46s ease-in-out infinite;
+}
+/* Gender Section Css */
+#genderSection{
+    margin-top: min(24px, 2%);
+    font-size: clamp(12px, 1.5vw, 48px) !important;
+    padding-top: min(12px, 1.5%);
+    padding-bottom: min(12px, 1.5%);
+    text-align: center;
+}
+.heading2{
+    letter-spacing: -2%;
+    text-align: center;
+    margin: 0;
+    font-size: clamp(18px, 2.5vw, 90px) !important;
+}
+.sections{
+    display: flex;
+    margin-top: min(24px, 1.5%);
+    align-items: center;
+}
+#femaleSection{
+    flex-direction: row-reverse;
+}
+.accessoriesCont{
+    flex: 5;
+}
+.accessoryImage{
+    height: 30vw;
+    object-fit: cover;
+    width: 100%;
+}
+.textCont{
+    flex: 3;
+    font-size: clamp(12px, 1.5vw, 48px) !important;
+    padding: min(18px, 2.5%);
+    text-align: center;
+}
+.heading3{
+    letter-spacing: -2%;
+    text-align: center;
+    font-size: clamp(16px, 2vw, 75px) !important;
+    font-weight: 600;
+}
+/* Splide Slide Show Css */
+#splideContainer{
+    text-align: center;
+    margin-top: min(28px, 3%);
+}
+.splide{
+    margin-top: min(24px, 2%);
+}
+.giftCarousel{
+    width: 100%;
+    height: 35vw;
+    object-fit: cover;
+}
+
+/* Footer Css */
+footer {
+    font-size: clamp(12px, 1.5vw, 48px) !important;
+    background-color: #000658;
+    background-image: url('images/wave.png');
+    border-top: #FFAA42 solid 3px;
+    background-position: bottom center; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    min-height: 30vw;
+    margin-top: min(36px, 3.5%); 
+    margin-bottom: 0px;
+    padding: min(18px, 2%); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    color: #fbf8ed;
+    gap: min(18px, 2.5%);
+}
+#footerLogo{
+    width: 25vw;
+}
+.footerContainer{
+    width: 30vw;
+    display: block;
+}
+#iconContainer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: min(4px, 1.5%);
+    margin-top: min(32px, 4%);
+}
+.icon{
+    min-width: 25px;
+    max-width: 125px;
+    width: 3vw;
+}
+
+/* Animations for background elements */
+@keyframes bearAnimation {
+    0% {
+        transform: rotate(-45deg) translateX(0) translateY(0);
+    }
+    50% {
+        transform: rotate(0deg) translateX(20px) translateY(30px);
+    }
+    100% {
+        transform: rotate(-45deg) translateX(0) translateY(0);
+    }
+}
+@keyframes watchAnimation {
+    0% {
+        transform: rotate(-45deg) translateX(0) translateY(0);
+    }
+    50% {
+        transform: rotate(45deg) translateX(-2vw) translateY(3vw);
+    }
+    100% {
+        transform: rotate(-45deg) translateX(0) translateY(0);
+    }
+}
+@keyframes ringsAnimation {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(-6vw) translateY(-6vw) rotate(45deg);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+@keyframes purseAnimation {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(6vw) translateY(-6vw);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+@keyframes keyChainAnimation {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(9vw) translateY(-9vw);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+@keyframes logoAnimation {
+    0% {
+        transform: translateY(30vw) scale(0.75) rotate(360deg);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0) scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    20% {
+        transform: translateY(0) scale(0.75) rotate(0deg);
+        opacity: 1;
+    }
+    30% {
+        transform: translateY(0) scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(0) scale(0.75) rotate(0deg);
+        opacity: 1;
+    }
+    45% {
+        transform: translateY(0) scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(0) scale(1) rotate(180deg);  
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(0) scale(1) rotate(180deg);  
+        opacity: 0;
+    }
+    70% {
+        transform: translateY(0) scale(1) rotate(0deg);  
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(0) scale(0.75) rotate(0deg);
+        opacity: 1;
+    }
+    90% {
+        transform: translateY(0) scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-30vw) scale(0.75) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Media query to ensure responsive design on extra small screens */
+@media(width<=576px){
+    /* Background Css */   
+    .watch {
+        left: 2vw;
+        width: 35vw;
+        top: 12vw;
+    }
+    .keyChain {
+        width: 40vw;
+        right: 8vw;
+        top: 2vw;
+    }
+    .rings {
+        visibility: hidden;
+    }
+    .purse {
+        visibility: hidden;
+    }
+    .bear {
+        visibility: hidden;
+    }
+
+    /* Home Css */
+    #headerSection{
+        height: auto;
+    }
+    #topSection{
+        height: auto;
+    }
+    #contentCard{
+        padding:2%;
+        font-size: clamp(12px, 1vw, 28px);
+        margin-left: 21%;
+    }
+    /* Carousel Section Css  */
+    #bodyContent{
+        flex-direction: column;
+    }
+    #carouselContainer{
+        width: 100%;
+    }
+    .carouselImage{
+        height: 60vw;
+        object-fit: cover;
+    }
+    #logoContainer{
+        width: 100%;
+        height:25vw;
+        padding: min(12px, 2%);
+    }
+    .businessLogo {
+        width: 30%;
+    }
+    /*  */
+    .sections, #femaleSection{
+        flex-direction: column;
+    }
+    .accessoriesCont{
+        width: 60%;
+    }
+    .accessoryImage{
+        height: 30vw;
+    }
+    .textCont{
+        width: 80%;
+        font-size: clamp(12px, 1.5vw, 48px);
+    }
+}

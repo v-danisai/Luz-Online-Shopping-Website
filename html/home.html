@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="splide/dist/css/splide.min.css">
+    <script type="text/javascript" src="splide/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="css/images/logo.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <a id="businessNameLink" href="../index.html">
+      <span id="businessName">
+          Luz Online Shopping
+      </span>
+    </a>
+    <nav> 
+        <ul>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">Location</a>
+            </li>
+            <li>
+                <a href="#">Products</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+  <div id="topSection">
+      <!-- Images as backgrounds -->
+      <img src="css/images/teddyBear.png" alt="Teddy Bear" class="backgroundImg bear">
+      <img src="css/images/handWatch.png" alt="Hand Watch" class="backgroundImg watch">
+      <img src="css/images/rings.png" alt="Rings" class="backgroundImg rings">
+      <img src="css/images/purse.png" alt="Purse" class="backgroundImg purse">
+      <img src="css/images/keyChain.png" alt="Key Chain" class="backgroundImg keyChain">
+      <!-- Header elements -->
+        <div id="contentCard">
+          <h1>Our Newest Products</h1>
+          <span id="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe omnis soluta, expedita molestiae reprehenderit illum numquam commodi cupiditate distinctio porro dolorum.
+          </span>
+        </div>
+  </div>
+  <div id="bodyContent">
+      <div id="carouselContainer">
+          <div id="categoriesCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#categoriesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#categoriesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#categoriesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#categoriesCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                  <img src="css/images/carouselMakeup.jpeg" class="d-block w-100 carouselImage" alt="Makeup">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="css/images/carouselFemaleClothing.jpg" class="d-block w-100 carouselImage" alt="Female Clothing">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="css/images/carouselMaleClothing.jpg" class="d-block w-100 carouselImage" alt="Male Clothing">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="css/images/carouselFemaleAccessories.jpg" class="d-block w-100 carouselImage" alt="Female Accessories">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Fourth slide label</h5>
+                    <p>Some representative placeholder content for the fourth slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      </div>
+      <div id="logoContainer">
+          <img class="businessLogo" src="css/images/trialLogo.png" alt="Business Logo">
+      </div>
+  </div>
+  <div id="genderSection">
+    <span class="heading2">Delve Into The Fashion World</span>
+    <div id="maleSection" class="sections">
+      <div id="maleAccessoriesImage" class="accessoriesCont">
+        <img src="css/images/maleAccessories.jpg" alt="Male Accessories" class="accessoryImage">
+      </div>
+      <div id="maleSectionText" class="textCont">
+        <span class="heading3">Male Category</span> <br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime sapiente quisquam amet quidem hic neque nisi eos reprehenderit ex dolorum dignissimos maiores aspernatur quia, ipsa porro est impedit asperiores esse.
+        </div>
+    </div>
+    <div id="femaleSection" class="sections">
+      <div id="femaleAccessoriesImage" class="accessoriesCont">
+        <img src="css/images/femaleAccessories.jpg" alt="Female Accessories" class="accessoryImage">
+      </div>
+      <div id="femaleSectionText" class="textCont">
+        <span class="heading3">Female Category</span>  <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non similique quos possimus maxime tempora inventore eum, officia corporis, cumque architecto fugiat dolor? Dicta neque, repellendus enim accusamus eaque voluptate?
+      </div>
+    </div>
+  </div>
+  <div id="splideContainer">
+    <span class="heading3">Gifts and Novelties Category</span> <br>
+    <div class="splide">
+      <div class="splide__track">
+        <div class="splide__list">
+          <li class="splide__slide">
+            <img src="css/images/carouselFemaleAccessories.jpg" alt="" class="giftCarousel">
+          </li>
+          <li class="splide__slide">
+            <img src="css/images/carouselFemaleClothing.jpg" alt="" class="giftCarousel">
+          </li>
+          <li class="splide__slide">
+            <img src="css/images/carouselMaleClothing.jpg" alt="" class="giftCarousel">
+          </li>
+          <li class="splide__slide" style="height:200px">
+            <img src="css/images/handWatch.png" alt="" class="giftCarousel">
+          </li>
+          <li class="splide__slide">
+            <img src="css/images/novelties.jpg" alt="" class="giftCarousel">
+          </li>
+          <li class="splide__slide">
+            <img src="css/images/trialLogo.png" alt="" class="giftCarousel">
+          </li>
+        </div>
+      </div>
+      <div class="splide__pagination"></div>
+    </div>
+  </div>
+  <footer>
+    <div id="footerMediaCont" class="footerContainer">
+      <span class="heading3">Get In Touch</span>
+      <div id="iconContainer">
+        <a href="#"><img src="css/images/facebookIcon.png" alt="Facebook" class="icon"></a>
+        <a href="#"><img src="css/images/messengerIcon.png" alt="Messenger" class="icon"></a>
+        <a href="#"><img src="css/images/instagramIcon.png" alt="Instagram" class="icon"></a>
+        <a href="#"><img src="css/images/whatsappIcon.png" alt="whatsapp" class="icon"></a>
+      </div>
+    </div>
+    <div id="footerLogoCont" class="footerContainer">
+      <img src="css/images/trialLogo.png" alt="Business Logo" id="footerLogo">
+    </div>
+    <div id="footerContactCont" class="footerContainer">
+      <span class="heading3">
+        Luz Online Shopping
+      </span> <br>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    new Splide(".splide",{
+      type:"loop",
+      perPage:2,
+      autoplay:true,
+      pagination: true,
+    }).mount();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* Import a font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Satisfy&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    background-color: #f3f5f8f5 !important;
+}
+header{
+    background-color: #073376;
+    display: flex;
+    padding: min(48px, 4%);
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 3px ridge #FFAA42;
+}
+#businessName{
+    font-size: clamp(24px, 3vw, 75px);
+    color: #FFAA42;
+    font-family: 'Satisfy';
+}
+#businessNameLink{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 50vw;
+    gap:8px;
+}
+li{
+    display: inline;
+    font-size: clamp(12px, 1.5vw, 48px);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none; 
+    display: block; 
+    font-size: clamp(16px, 1.5vw, 36px);
+    color: #FFAA42 !important;
+}
+
+/* Media query to ensure responsive design on extra small screens */
+@media(width<=576px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    ul{
+        width: 90%;
+    }
+}
