@@ -5,7 +5,8 @@ html,body{
     padding: 0;
     height: 100%;
     overflow: auto;
-    background-color: #f3f5f8f5 !important;
+    background-color: #ecf2fbf5 !important;
+
 }
 header{
     background-color: #073376;
