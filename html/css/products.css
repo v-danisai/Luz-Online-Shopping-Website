@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Search Bar */
+#searchContainer{
+    display: flex;
+    background-color: red;
+    position:sticky;
+    top: 0px;
+}
+
+/* Grid Css */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: min(4%, 24px);
+    padding: min(4%,24px);
+}
+.itemCard {
+    background-color: #f2f2f2;
+    padding: min(16px, 2.5%);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.itemImage{
+    width: 100%;
+    object-fit: cover;
+}

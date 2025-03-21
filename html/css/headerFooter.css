@@ -40,11 +40,74 @@ li{
     margin: 0;
     padding: 0;
 }
-a {
+a{
     text-decoration: none; 
     display: block; 
     font-size: clamp(16px, 1.5vw, 36px);
     color: #FFAA42 !important;
+}
+
+/* Headings */
+.heading1{
+    font-size: clamp(16px, 4vw, 120px) !important;
+    letter-spacing: -3%;
+    font-family: 'Merriweather';
+}
+.heading2{
+    letter-spacing: -2%;
+    text-align: center;
+    margin: 0;
+    font-size: clamp(18px, 2.5vw, 90px) !important;
+}
+.heading3{
+    letter-spacing: -2%;
+    text-align: center;
+    font-size: clamp(16px, 2vw, 75px) !important;
+    font-weight: 600;
+}
+
+/* Footer Css */
+footer {
+    font-size: clamp(12px, 1.5vw, 48px) !important;
+    background-color: #000658;
+    background-image: url('images/wave.png');
+    border-top: #FFAA42 solid 3px;
+    background-position: bottom center; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    min-height: 30vw;
+    margin-top: min(36px, 3.5%); 
+    margin-bottom: 0px;
+    padding: min(18px, 2%); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    color: #fbf8ed;
+    gap: min(18px, 2.5%);
+}
+#footerLogo{
+    width: 25vw;
+}
+.footerContainer{
+    width: 30vw;
+    display: block;
+}
+#iconContainer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: min(4px, 1.5%);
+    margin-top: min(32px, 4%);
+}
+.icon{
+    min-width: 25px;
+    max-width: 125px;
+    width: 3vw;
+    transition: 0.3s;
+}
+.icon:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 /* Media query to ensure responsive design on extra small screens */
@@ -56,5 +119,14 @@ a {
     }
     ul{
         width: 90%;
+    }
+}
+@media(width<=376px){
+    footer{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .footerContainer{
+        width: 75vw;
     }
 }

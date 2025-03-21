@@ -21,21 +21,20 @@
     <nav> 
         <ul>
             <li>
-                <a href="#">About Us</a>
+                <a href="products.html">Products</a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="#">Location</a>
             </li>
             <li>
-                <a href="#">Products</a>
-            </li>
+              <a href="#">Contact Us</a>
+            </li> -->
             <li>
-                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
             </li>
         </ul>
     </nav>
   </header>
-
   <div id="topSection">
       <!-- Images as backgrounds -->
       <img src="css/images/teddyBear.png" alt="Teddy Bear" class="backgroundImg bear">
@@ -45,7 +44,7 @@
       <img src="css/images/keyChain.png" alt="Key Chain" class="backgroundImg keyChain">
       <!-- Header elements -->
         <div id="contentCard">
-          <h1>Our Newest Products</h1>
+          <span class="heading1">Our Newest Products</span> <br>
           <span id="cardText">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe omnis soluta, expedita molestiae reprehenderit illum numquam commodi cupiditate distinctio porro dolorum.
           </span>
@@ -116,8 +115,10 @@
     <span class="heading2">Delve Into The Fashion World</span>
     <div id="maleSection" class="sections">
       <div id="maleAccessoriesImage" class="accessoriesCont">
-        <img src="css/images/maleAccessories.jpg" alt="Male Accessories" class="accessoryImage">
-        <div class="categoryButtonCont">
+        <video class="accessoryVideo" autoplay muted loop>                
+          <source src="css/images/4K_3.mp4" type="video/mp4">
+        </video>
+        <div class="categoryButtonCont maleBtnCont">
           <button class="categoryButton">Explore!</button>
         </div>
       </div>
@@ -128,8 +129,10 @@
     </div>
     <div id="femaleSection" class="sections">
       <div id="femaleAccessoriesImage" class="accessoriesCont">
-        <img src="css/images/femaleAccessories.jpg" alt="Female Accessories" class="accessoryImage">
-        <div class="categoryButtonCont">
+        <video class="accessoryVideo" autoplay muted loop>                
+          <source src="css/images/4K_3.mp4" type="video/mp4">
+        </video>
+        <div class="categoryButtonCont femaleBtnCont">
           <button class="categoryButton">Explore!</button>
         </div>
       </div>
@@ -210,6 +213,12 @@
       </span> <br>
     </div>
   </footer>
+  <div id="businessName">
+    Luz Online Shopping
+  </div>
+  <div id="copyRight">
+    Copyright @KDMS Web Creations
+  </div>
   <script type="text/javascript">
     new Splide(".splide",{
       type:"loop",
