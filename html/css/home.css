@@ -48,13 +48,13 @@
 
 /* Css for home */
 #topSection{
-    background-color: #fbf8ed;
+    background-color: #e5f3f5;
     overflow: hidden;
     position: relative;
     padding: min(24px, 2%);
     align-content: center;
     border-bottom: 3px ridge #FFAA42;
-    height: 35vw;
+    height: 42vw;
 }
 #contentCard{
     min-width: 38vw;
@@ -404,6 +404,12 @@
     }
 }
 @media(width<=376px){
+    .watch {
+        visibility: hidden;
+    }
+    .keyChain {   
+        visibility: hidden;
+    }
     .categoryButtonCont{
         top:65%;
     }
