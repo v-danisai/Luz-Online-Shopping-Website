@@ -36,6 +36,7 @@ body{
     gap: min(48px, 4%);
     align-items: center;
     justify-content: space-evenly;
+    background-color:  #0881A3;
 }
 #topTextContainer{
     width: 45vw;
