@@ -9,12 +9,12 @@ html,body{
 
 }
 header{
-    background-image: linear-gradient(90deg, turquoise, blue, rgb(180, 73, 180));
+    background-image: linear-gradient(90deg, #4E8BC4,#FFC2D9, turquoise);
     display: flex;
-    padding-left: min(48px, 4%);
-    padding-right: min(48px, 4%);
-    padding-top: min(8px, 1.5%);
-    padding-bottom: min(8px, 1.5%);
+    padding-left: min(52px, 4%);
+    padding-right: min(52px, 4%);
+    padding-top: min(16px, 2%);
+    padding-bottom: min(16px, 2%);
     align-items: baseline;
     justify-content: space-between;
     border-bottom: 2px solid rgb(0, 30, 81);
@@ -42,15 +42,21 @@ li{
     text-decoration: none;
     margin: 0;
     padding: 0;
+    color: #3F4B83 !important;
+    transition: 0.3s;
 }
 a{
     text-decoration: none; 
     display: block; 
     font-size: clamp(16px, 1.5vw, 36px);
-    /* color: #FFAA42 !important; */
-    color: white !important;
+    /* color: #3F4B83 !important; */
 }
-
+a:hover{
+    color: blue !important;
+    color: rgb(0, 55, 255) !important;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 /* Headings */
 .heading1{
     font-size: clamp(16px, 4vw, 120px) !important;
@@ -72,8 +78,7 @@ a{
 
 /* Footer Css */
 footer {
-    font-size: clamp(12px, 1.5vw, 48px) !important;
-    background-color: #8708d1;
+    background-color: #0881A3;
     background-image: url('images/wave.png');
     border-top: black solid 2px;
     background-position: bottom center; 
@@ -82,6 +87,9 @@ footer {
     min-height: 30vw;
     margin-top: min(36px, 3.5%); 
     padding: min(18px, 2%); 
+}
+#footerWrapper{
+    font-size: clamp(12px, 1.5vw, 48px) !important;
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -121,13 +129,11 @@ footer {
     font-size: clamp(0.85rem, 1.75vw, 2.75rem);
 }
 #copyRight{
-    background-image: linear-gradient(darkblue, rgb(197, 68, 141));
     text-align: center;
-    height: 4vw;
+    margin-top:min(24px, 2%);
     align-content: center;
     color: white;
     font-size: clamp(0.85rem, 1.25vw, 2rem);
-    margin-bottom: 0px;
 }
 /* Media query to ensure responsive design on extra small screens */
 @media(width<=576px){
@@ -141,7 +147,7 @@ footer {
     }
 }
 @media(width<=376px){
-    footer{
+    #footerWrapper{
         flex-direction: column;
         gap: 16px;
     }

@@ -89,10 +89,10 @@ label{
     font-style: italic;
 }
 .itemCard:hover{
-    border:#a3e7e6 2px ridge;
+    border:#6a6a6a 2px ridge;
     cursor: pointer;
-    background-color: #bde7e6;
+    background-color: #bbf6f5;
 }
 .itemCard:active {
-    transform: scale(1.05); 
+    transform: scale(1.02); 
 }

@@ -48,7 +48,7 @@
 
 /* Css for home */
 #topSection{
-    background-color: #e5f3f5;
+    background-color: rgb(255, 245, 255);
     overflow: hidden;
     position: relative;
     padding: min(24px, 2%);
@@ -87,6 +87,11 @@
 }
 .carouselTitle{
     font-size: clamp(24px, 2vw, 240px);
+}
+.heading4{
+    font-size: clamp(18px, 1.25vw, 180px);
+    letter-spacing: -3%;
+    font-family: sans-serif;
 }
 #logoContainer{
     flex: 1;

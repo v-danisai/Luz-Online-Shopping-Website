@@ -49,7 +49,7 @@ html,body{
     width: min(450px, 75%);
 }
 #loginCard{
-    border: white 2px solid;
+    border: white  2px solid;
     width: min(500px, 65%);
     height: min(500px, 50%);
     border-radius: 16px;
@@ -57,8 +57,8 @@ html,body{
     color: white;
     font-family: 'Satisfy';
     text-align: center;
-    background-color: rgb(78, 132, 208);
-    box-shadow: 4px 0 4px rgba(179, 132, 232, 0.8), 0 0 20px rgba(132, 84, 188, 0.8), 0 0 30px rgba(212, 124, 198, 0.8); 
+    background-image: linear-gradient(#4E8BC4, turquoise);
+    box-shadow: 4px 0 4px #FFC2D9, 0 0 20px  #FF99BE, 0 0 30px #C2E1FC;
     transition: box-shadow 0.3s ease-in-out; 
 }
 h3{
@@ -85,7 +85,7 @@ h3{
     cursor: pointer;
     animation: bounce 2s ease-in-out;
     animation-iteration-count: infinite;
-    background-color: turquoise;
+    background-color: #FFC2D9;
     font-size: clamp(12px, 1.5vw,28px);
     color: white;
     font-weight: bold;
