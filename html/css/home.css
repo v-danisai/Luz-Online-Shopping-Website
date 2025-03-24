@@ -285,51 +285,51 @@
 }
 @keyframes logoAnimation {
     0% {
-        transform: translateY(30vw) scale(0.75) rotate(360deg);
+        transform: translateY(30vw) scale(1) rotate(360deg);
         opacity: 0;
     }
     10% {
-        transform: translateY(0) scale(1) rotate(0deg);
+        transform: translateY(0) scale(1.1) rotate(0deg);
         opacity: 1;
     }
     20% {
-        transform: translateY(0) scale(0.75) rotate(0deg);
+        transform: translateY(0) scale(1) rotate(0deg);
         opacity: 1;
     }
     30% {
-        transform: translateY(0) scale(1) rotate(0deg);
+        transform: translateY(0) scale(1.1) rotate(0deg);
         opacity: 1;
     }
     40% {
-        transform: translateY(0) scale(0.75) rotate(0deg);
+        transform: translateY(0) scale(1) rotate(0deg);
         opacity: 1;
     }
     45% {
-        transform: translateY(0) scale(1) rotate(0deg);
+        transform: translateY(0) scale(1.1) rotate(0deg);
         opacity: 1;
     }
     50% {
-        transform: translateY(0) scale(1) rotate(180deg);  
+        transform: translateY(0) scale(1.1) rotate(180deg);  
         opacity: 0;
     }
     60% {
-        transform: translateY(0) scale(1) rotate(180deg);  
+        transform: translateY(0) scale(1.1) rotate(180deg);  
         opacity: 0;
     }
     70% {
-        transform: translateY(0) scale(1) rotate(0deg);  
+        transform: translateY(0) scale(1.1) rotate(0deg);  
         opacity: 1;
     }
     80% {
-        transform: translateY(0) scale(0.75) rotate(0deg);
-        opacity: 1;
-    }
-    90% {
         transform: translateY(0) scale(1) rotate(0deg);
         opacity: 1;
     }
+    90% {
+        transform: translateY(0) scale(1.1) rotate(0deg);
+        opacity: 1;
+    }
     100% {
-        transform: translateY(-30vw) scale(0.75) rotate(360deg);
+        transform: translateY(-30vw) scale(1) rotate(360deg);
         opacity: 0;
     }
 }

@@ -96,3 +96,10 @@ label{
 .itemCard:active {
     transform: scale(1.02); 
 }
+
+/* Media query for smaller screens */
+@media (width<=576px){
+    #resultsContainer, .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
