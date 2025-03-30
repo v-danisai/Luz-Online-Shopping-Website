@@ -9,6 +9,12 @@ html,body{
 
 }
 header{
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.headerSection{
     background-image: linear-gradient(90deg, #4E8BC4,#FFC2D9, turquoise);
     display: flex;
     padding-left: min(52px, 4%);
@@ -137,7 +143,7 @@ footer {
 }
 /* Media query to ensure responsive design on extra small screens */
 @media(width<=576px){
-    header{
+    .headerSection{
         flex-direction: column;
         align-items: center;
         gap: 8px;
