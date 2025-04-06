@@ -3,7 +3,7 @@ let openBtn = document.getElementById("openDialogue");
 let closeBtn = document.getElementById("closeDialogue");
 let listItemsHTML = document.querySelector(".categoryCont");
 let listCartsHTML = document.querySelector("#productContainer");
-// let iconCounter = document.querySelector(".iconCounter");
+let iconCounter = document.querySelector(".cartCounter");
 
 let carts = [];
 let listItems = [];
@@ -120,14 +120,22 @@ function addToCart(id) {
         carts[positionThisProductInCart].quantity += 1;
     }
     addToCartHTML();
+    addCartToMemory();
+}
+
+const addCartToMemory = () => {
+    localStorage.setItem("cart", JSON.stringify(carts));
 }
 
 const addToCartHTML = () => {
     listCartsHTML.innerHTML = '';
+    let totalQuantity = 0;
     if(carts.length > 0) {
         carts.forEach((item) => {
+            totalQuantity += item.quantity;
             let newCartItem = document.createElement("div");
             newCartItem.classList.add("cartItem");
+            newCartItem.dataset.id = item.productId;
             let positionProduct = listItems.findIndex((product) => product.id == item.productId);
             let info = listItems[positionProduct];
             newCartItem.innerHTML = `
@@ -136,7 +144,7 @@ const addToCartHTML = () => {
                     
                     <div class="infoContainer">
                         ${info.name}    </br>
-                        <span class="price">${info.price}</span></br>
+                        <span class="price"> $${info.price * item.quantity}</span></br>
                     </div>
                     <div class="buttonCont">
                         <button class="minus">
@@ -152,6 +160,39 @@ const addToCartHTML = () => {
             listCartsHTML.appendChild(newCartItem);
         });
     }
+    iconCounter.innerHTML = totalQuantity;
+}
+
+listCartsHTML.addEventListener('click', (event) => {
+    if (event.target.classList.contains("minus") || event.target.classList.contains("plus")) {
+        const cartItem = event.target.closest(".cartItem");
+        const productId = cartItem.dataset.id;
+        const type = event.target.classList.contains("plus") ? 'plus' : 'minus';
+        changeQuantity(productId, type);
+    }
+});
+
+
+const changeQuantity = (id, type) => {
+    let positionThisProductInCart = carts.findIndex((item) => item.productId == id);    
+    if(positionThisProductInCart >= 0) {
+        switch(type) {
+            case 'plus':
+                carts[positionThisProductInCart].quantity += 1;
+                break;
+            case 'minus':
+                let valueChange = carts[positionThisProductInCart].quantity - 1;
+                if(valueChange > 0) {
+                    carts[positionThisProductInCart].quantity = valueChange;
+                }else{
+                    carts.splice(positionThisProductInCart, 1);
+                }
+                break;
+        }
+    }
+
+    addCartToMemory();
+    addToCartHTML();
 }
 
 const initApp = () => {
@@ -160,6 +201,12 @@ const initApp = () => {
         .then(data => {
             listItems = data;
             addDataToHTML();
+
+            //get cart from memory
+            if(localStorage.getItem("cart")){
+                carts = JSON.parse(localStorage.getItem("cart"));
+                addToCartHTML();
+            }
         })
         .catch(error => {
             console.error("Error fetching products:", error);
