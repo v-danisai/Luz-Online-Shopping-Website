@@ -144,7 +144,7 @@ label{
     background-color: rgba(255, 255, 255, 0.221);
 }
 .itemPic{
-    height: 6vw;
+    width: 20%;
 }
 .infoContainer{
     flex: 5;
@@ -333,7 +333,7 @@ h2{
     }
     /*  */
     .itemPic{
-        height: 10vw;
+        width: 25%;
     }
     .plus{
         min-width: 6vw;

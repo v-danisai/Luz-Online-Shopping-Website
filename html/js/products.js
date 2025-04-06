@@ -71,7 +71,7 @@ const addDataToHTML = () => {
                     </div>
                     <button class="buttonBackground" data-id="${item.id}">
                         <div class="cartContainer">
-                            <img src="/html/css/images/shoppingCart.png" class="cartIcon" alt="Shopping Cart">
+                            <img src="./css/images/shoppingCart.png" class="cartIcon" alt="Shopping Cart">
                         </div>
                         <div class="cartButton">
                             Add
@@ -153,8 +153,6 @@ const addToCartHTML = () => {
         });
     }
 }
-
-
 
 const initApp = () => {
     fetch("./json/products.json")

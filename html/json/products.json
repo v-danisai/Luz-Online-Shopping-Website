@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name":" One",
+        "name":" Female Accessories",
         "price": 140,
         "image": "./css/images/femaleAccessories.jpg",
         "desc": "Lorem ipsum dolor sit amet.",
@@ -9,10 +9,26 @@
     },
     {
         "id": 2,
-        "name":" Hat",
-        "price": 235,
+        "name":" Male Accessories",
+        "price": 535,
         "image": "./css/images/maleAccessories.jpg",
         "desc": "Lorem ipsum dolor sit amet.",
         "category": "Female"
+    },
+    {
+        "id": 3,
+        "name":" Key Chain",
+        "price": 180,
+        "image": "./css/images/keyChain.png",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Kids"
+    },
+    {
+        "id": 4,
+        "name":" Rings",
+        "price": 50,
+        "image": "./css/images/rings.png",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Jewelry"
     }
 ]
