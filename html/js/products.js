@@ -61,7 +61,8 @@ const addDataToHTML = () => {
                 newItem.classList.add("itemCard");
                 newItem.innerHTML = `
                     <div class="imageContainer">
-                        <img class="itemImage" src="${item.image}" alt="${item.name}">
+                        <img class="itemImage" src="${basePath}/${item.image}" alt="${item.name}">
+
                     </div>
                     <div class="itemName">${item.name}</div>
                     <div class="itemInfo">
@@ -155,8 +156,6 @@ const addToCartHTML = () => {
 
 const initApp = () => {
     const basePath = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '');
-
-    console.log(`${basePath}/html/json/products.json`);
 
     fetch(`${basePath}/json/products.json`)
         .then(response => response.json())
