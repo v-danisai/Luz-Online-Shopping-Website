@@ -1,0 +1,168 @@
+let dialog = document.getElementById("purchaseDialogue");
+let openBtn = document.getElementById("openDialogue");
+let closeBtn = document.getElementById("closeDialogue");
+let listItemsHTML = document.querySelector(".categoryCont");
+let listCartsHTML = document.querySelector("#productContainer");
+// let iconCounter = document.querySelector(".iconCounter");
+
+let carts = [];
+let listItems = [];
+
+openBtn.addEventListener("click", () => {
+    dialog.showModal(); 
+});
+
+closeBtn.addEventListener("click", () => {
+    dialog.close(); 
+});
+
+const addDataToHTML = () => {
+    // Clear previous content
+    listItemsHTML.innerHTML = '';
+
+    // Create a new parent wrapper div for the categories (inside .categoryCont)
+    let newParentContainer = document.createElement("div");
+    newParentContainer.classList.add("categoriesWrapper");
+
+    if (listItems.length > 0) {
+        // Group items by category
+        let groupedItems = {};
+
+        listItems.forEach(item => {
+            if (!groupedItems[item.category]) {
+                groupedItems[item.category] = [];
+            }
+            groupedItems[item.category].push(item);
+        });
+
+        // Loop through each category and create a separate section
+        Object.keys(groupedItems).forEach(category => {
+            // Create a section for each category
+            let section = document.createElement("div");
+            section.classList.add("categorySection");
+
+            // Create the category header with a dynamic id
+            let header = document.createElement("h2");
+            header.classList.add("categoryHeader");
+            header.innerText = category;
+
+            // Assign a dynamic ID to the header (you can sanitize the category name for safe IDs)
+            header.id = `category-${category.toLowerCase().replace(/\s+/g, '-')}`;
+
+            section.appendChild(header);
+
+            // Create a new .gridContainer for this category
+            let categoryGrid = document.createElement("div");
+            categoryGrid.classList.add("gridContainer");
+
+            // Append each item to this grid
+            groupedItems[category].forEach(item => {
+                let newItem = document.createElement("div");
+                newItem.classList.add("itemCard");
+                newItem.innerHTML = `
+                    <div class="imageContainer">
+                        <img class="itemImage" src="${item.image}" alt="${item.name}">
+                    </div>
+                    <div class="itemName">${item.name}</div>
+                    <div class="itemInfo">
+                        <span class="price">${item.price}</span><br>
+                        <span class="description">${item.desc}</span>
+                    </div>
+                    <button class="buttonBackground" data-id="${item.id}">
+                        <div class="cartContainer">
+                            <img src="/html/css/images/shoppingCart.png" class="cartIcon" alt="Shopping Cart">
+                        </div>
+                        <div class="cartButton">
+                            Add
+                        </div>
+                    </button>
+                `;
+                categoryGrid.appendChild(newItem);
+            });
+
+            // Append categoryGrid to the section
+            section.appendChild(categoryGrid);
+
+            // Append the section to the new wrapper
+            newParentContainer.appendChild(section);
+        });
+
+        // Append the newParentContainer inside .categoryCont (instead of document.body)
+        listItemsHTML.appendChild(newParentContainer);
+    }
+};
+
+listItemsHTML.addEventListener('click', (event) => {
+    const button = event.target.closest(".buttonBackground");
+    if (button) {
+        const productId = button.dataset.id;
+        // Use loose equality or cast both to same type
+        const product = listItems.find(item => item.id == productId); 
+
+        addToCart(productId);
+    }
+});
+
+function addToCart(id) {
+    let positionThisProductInCart = carts.findIndex((item) => item.productId == id);    
+    if(carts.length <= 0) {
+        carts = [{
+            productId: id,
+            quantity: 1
+        }]
+    }else if(positionThisProductInCart < 0) {
+        carts.push({
+            productId: id,
+            quantity: 1
+        })
+    }else{
+        carts[positionThisProductInCart].quantity += 1;
+    }
+    addToCartHTML();
+}
+
+const addToCartHTML = () => {
+    listCartsHTML.innerHTML = '';
+    if(carts.length > 0) {
+        carts.forEach((item) => {
+            let newCartItem = document.createElement("div");
+            newCartItem.classList.add("cartItem");
+            let positionProduct = listItems.findIndex((product) => product.id == item.productId);
+            let info = listItems[positionProduct];
+            newCartItem.innerHTML = `
+            <div class="rowContainer">
+                    <img src="${info.image}" alt="ItemPicture" class="itemPic">
+                    
+                    <div class="infoContainer">
+                        ${info.name}    </br>
+                        <span class="price">${info.price}</span></br>
+                    </div>
+                    <div class="buttonCont">
+                        <button class="minus">
+                            -
+                        </button>
+                            ${item.quantity}
+                        <button class="plus">
+                            +
+                        </button>
+                    </div>
+            </div>
+            `;
+            listCartsHTML.appendChild(newCartItem);
+        });
+    }
+}
+  
+const initApp = () => {
+    fetch("/html/json/products.json")
+    .then(response => response.json())
+    .then(data => {
+        listItems = data;
+        addDataToHTML();
+    })
+    .catch(error => {
+        console.error("Error fetching products:", error);
+    });
+}
+initApp();
+

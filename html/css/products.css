@@ -17,6 +17,7 @@ body {
     height:fit-content;
     align-items: center;
     padding: min(16px, 2.5%);
+    gap: min(16px, 2%);
 }
 #exploreNow{
     font-size: clamp(0.75rem,1.5vw,2.75vw);
@@ -26,7 +27,7 @@ body {
 #inputContainer{
     flex: 3;
     text-align: center;
-    font-size: clamp(0.5rem,1vw,1.75vw);
+    font-size: clamp(0.6rem,1.1vw,1.75vw);
 }
 label{
     margin-right: min(16px, 1.5%);
@@ -43,16 +44,169 @@ label{
     min-width: 100px;
     min-height: 20px;
 }
+/*  */
+/* ----------------------------------------- */
+#purchaseDialogue{
+    width: 50vw;
+    height: 30vw;
+    min-height: 300px;
+    border: rgb(0, 0, 0) 2px solid;
+    padding: 0;
+    background-image: linear-gradient(#e963bc, turquoise);
+    overflow-y: hidden;
+}
+#mainDialogueContainer{
+    display: flex;
+    height: 30vw;
+    min-height: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+}
+#productContainer{
+    padding: min(8px, 2%);
+    text-align: center;
+    width: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: center;
+}
+.openButton{
+    background-color: #28a745;
+    border: none;
+    padding-left:  min(8px, 2%);
+    padding-right: min(8px, 2%);
+    padding-top: min(4px, 2%);
+    padding-bottom: min(4px, 2%);
+    border-radius: 5px;
+    cursor: pointer;
+    align-content: center;
+    justify-content: center;
+    width: 4vw;
+    min-width: 35px;
+}
+.openButton:hover{
+    background-color: #218838; 
+}
+.openButton:active{
+    background-color: #1e7e34; 
+    transform: scale(0.95);
+}
+.buttonContainer{
+    width: 80%;
+    text-align: center;
+    padding: min(4px, 2%);
+}
+.closeButton{
+    background-color: rgb(215, 2, 2); 
+    color: white;
+    border: rgb(62, 61, 61) 2px solid;
+    padding: min(8px, 4%);
+    font-size: clamp(0.85rem, 1.25vw, 2.75vw);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  0.3s ease, transform 0.1s ease;
+    width: 80%;
+    margin-bottom: min(4px, 2%);
+}
+.closeButton:hover{
+    background-color: #ff0e26;
+    border: whitesmoke 2px solid;
+}
+.closeButton:active{
+    background-color: #a71d2a; 
+    transform: scale(0.95);
+}
+.basket{
+    width: 100%;
+    min-width: 20px;
+}
+/*  */
+.rowContainer{
+    display: flex;
+    margin: min(4px, 4%);
+    height: max-content;
+    width: 90%;
+    padding: min(12px, 3.5%);
+    justify-content: space-between;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(0.75rem, 1.5vw, 4rem) !important;
+}
+.rowContainer:nth-child(even){
+    background-color: rgba(255, 255, 255, 0.574);
+}
+.rowContainer:nth-child(odd){
+    background-color: rgba(255, 255, 255, 0.221);
+}
+.itemPic{
+    height: 6vw;
+}
+.infoContainer{
+    flex: 5;
+    align-content: center;
+    text-align: center;
+}
+.buttonCont{
+    flex: 4;
+    align-content: center;
+}
+.plus{
+    border-radius: 50%;
+    padding: min(4px, 2%);
+    min-width: 3vw;
+    background-color: #218838 !important;
+    color: white;
+    font-weight: 400;
+}
+.minus{
+    border-radius: 50%;
+    padding: min(4px, 2%);
+    min-width: 3vw;
+    background-color: #a71d2a;
+    color: white;
+    font-weight: 400;
+}
+/*  */
+.highlight{
+    background-color: #d4d3d3;
+    border: 2px solid #a6a6a6;
+    border-radius: 2px;
+}
 /* Grid Css */
 #gridWrapper{
     padding: min(24px, 5%);
     height: fit-content;
 }
-#resultsContainer, .gridContainer {
+.gridContainer, #resultsContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: auto;
     grid-template-rows: auto; 
+    padding: min(16px, 3%);
+}
+h2{
+    font-size: clamp(1rem, 2vw, 4rem) !important;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Merriweather', sans-serif;
+    color: rgb(51, 51, 51) !important;
+}
+#noResults{
+    font-size: clamp(1rem, 2vw, 4rem) !important;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Merriweather', sans-serif;
+    color: rgb(119, 119, 119);
+    text-align: center;
+    grid-column: 1 / -1; 
+    grid-row: 1 / -1;   
+    margin-top: 45vh; 
+    margin-bottom: 45vh;
 }
 .itemCard {
     background-color: #f2f2f2;
@@ -63,6 +217,13 @@ label{
     height:auto;
     margin: min(8px, 1.5%);
     border: 2px rgb(177, 177, 177) solid;
+}
+.itemCard:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color: rgb(176, 252, 244);
 }
 .itemImage{
     width: 100%;
@@ -85,15 +246,58 @@ label{
     color: rgb(119, 119, 119);
     font-style: italic;
 }
-.itemCard:hover{
-    border:#6a6a6a 2px ridge;
-    cursor: pointer;
-    background-color: #bbf6f5;
+.buttonBackground{
+    border: #0dcaf0 2px solid;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    gap: min(4px, 2%);
+    padding: min(8px, 2%);
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
 }
-.itemCard:active {
-    transform: scale(1.02); 
+.cartContainer{
+    flex: 1;
+    width: auto;
+    align-content: center;
 }
-
+.cartIcon{
+    width: 45%;
+    min-width: 20px;
+    margin-bottom: 6%;
+}
+.cartButton{
+    flex: 2;
+    width: fit-content;
+    background-color: #0dcaf0;
+    border-radius: 25px;
+    padding: min(6px, 2%);
+    font-size: clamp(0.75rem, 1vw, 2.75vw);
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.buttonBackground:hover{
+    background-color: #0dcaf0;
+    color: white;
+}
+.buttonBackground:hover .cartButton{
+    background-color: #0a58ca;
+    color: white;
+    border: whitesmoke 1px solid;
+    transition: 0.3s;
+}
+.buttonBackground:active .cartButton{
+    color: white;
+    border: whitesmoke 1px solid;
+    transform: scale(0.75);
+    transition: 0.6s;
+}
 /* Media query for smaller screens */
 @media (width<=576px){
     #resultsContainer, .gridContainer {
@@ -102,13 +306,53 @@ label{
     #searchNav{
         top: 350px;
     }
+    #purchaseDialogue{
+        width: 80vw;
+        height: 50vw;
+    }
+    #mainDialogueContainer{
+        height: 50vw;
+    }
+    #productContainer{
+        text-align: center;
+        width: 90%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        justify-content: center;
+    }
+    .rowContainer{
+        width: 95%;
+    }
+    .buttonContainer{
+        width: 80%;
+        text-align: center;
+        padding: min(4px, 2%);
+    }
+    .closeButton{
+        height: fit-content;
+    }
+    /*  */
+    .itemPic{
+        height: 10vw;
+    }
+    .plus{
+        min-width: 6vw;
+    }
+    .minus{
+        min-width: 6vw;
+    }
+    /*  */
+    /* .closeButton{
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition:  0.3s ease, transform 0.1s ease;
+        width: 80%;
+    } */
 }
-/* @media(width<=376px){
-    #footerWrapper{
-        flex-direction: column;
-        gap: 16px;
+@media(width<=376px){
+    .cartButton{
+        position: absolute;
+        visibility: hidden;
     }
-    .footerContainer{
-        width: 75vw;
-    }
-} */
+}
