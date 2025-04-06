@@ -3,7 +3,7 @@
         "id": 1,
         "name":" One",
         "price": 140,
-        "image": "/html/css/images/femaleAccessories.jpg",
+        "image": "./css/images/femaleAccessories.jpg",
         "desc": "Lorem ipsum dolor sit amet.",
         "category": "Male"
     },
@@ -11,64 +11,8 @@
         "id": 2,
         "name":" Hat",
         "price": 235,
-        "image": "/html/css/images/maleAccessories.jpg",
-        "desc": "Lorem ipsum dolor sit amet.",
-        "category": "Male"
-    },
-    {
-        "id": 3,
-        "name":" Sandals",
-        "price": 120,
-        "image": "/html/css/images/femaleAccessories.jpg",
-        "desc": "Lorem ipsum dolor sit amet.",
-        "category": "Male"
-    },
-    {
-        "id": 4,
-        "name":"Phone",
-        "price": 200,
-        "image": "/html/css/images/femaleAccessories.jpg",
+        "image": "./css/images/maleAccessories.jpg",
         "desc": "Lorem ipsum dolor sit amet.",
         "category": "Female"
-    },
-    {
-        "id": 5,
-        "name":" New one",
-        "price": 200,
-        "image": "/html/css/images/femaleAccessories.jpg",
-        "desc": "Lorem ipsum dolor sit amet.",
-        "category": "Male"
-    },
-    {
-        "id": 6,
-        "name":" Other Male",
-        "price": 200,
-        "image": "/html/css/images/femaleAccessories.jpg",
-        "desc": "Lorem ipsum dolor sit amet.",
-        "category": "Male"
-    },
-    {
-        "id": 7,
-        "name":"Another thing",
-        "price": 200,
-        "image": "/html/css/images/femaleAccessories.jpg",
-        "desc": "Lorem ipsum dolor sit amet.",
-        "category": "Jewelry"
-    },
-    {
-        "id": 8,
-        "name":" Something different",
-        "price": 200,
-        "image": "/html/css/images/femaleAccessories.jpg",
-        "desc": "Lorem ipsum dolor sit amet.",
-        "category": "Jewelry"
-    },
-    {
-        "id": 9,
-        "name":" Daniel",
-        "price": 0.01,
-        "image": "/html/css/images/femaleAccessories.jpg",
-        "desc": "Villanueva",
-        "category": "Jewelry"
     }
 ]

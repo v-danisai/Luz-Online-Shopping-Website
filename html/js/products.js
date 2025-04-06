@@ -157,15 +157,8 @@ const addToCartHTML = () => {
 
 
 const initApp = () => {
-    // fetch("/html/json/products.json")
-    const basePath = window.location.origin + "/html/json/products.json";
-    fetch(basePath)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Network response was not ok " + response.statusText);
-            }
-            return response.json();
-        })
+    fetch("./json/products.json")
+    .then(response => response.json())
         .then(data => {
             listItems = data;
             addDataToHTML();
@@ -173,13 +166,5 @@ const initApp = () => {
         .catch(error => {
             console.error("Error fetching products:", error);
         });
-    // .then(response => response.json())
-    //     .then(data => {
-    //         listItems = data;
-    //         addDataToHTML();
-    //     })
-    //     .catch(error => {
-    //         console.error("Error fetching products:", error);
-    //     });
 }
 initApp();
