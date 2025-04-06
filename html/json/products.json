@@ -3,7 +3,7 @@
         "id": 1,
         "name":" One",
         "price": 140,
-        "image": "css/images/maleAccessories.jpg",
+        "image": "/html/css/images/femaleAccessories.jpg",
         "desc": "Lorem ipsum dolor sit amet.",
         "category": "Male"
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "name":" Hat",
         "price": 235,
-        "image": "css/images/femaleAccessories.jpg",
+        "image": "/html/css/images/maleAccessories.jpg",
         "desc": "Lorem ipsum dolor sit amet.",
         "category": "Male"
     },

@@ -61,7 +61,7 @@ const addDataToHTML = () => {
                 newItem.classList.add("itemCard");
                 newItem.innerHTML = `
                     <div class="imageContainer">
-                        <img class="itemImage" src="${basePath}/${item.image}" alt="${item.name}">
+                        <img class="itemImage" src="${item.image}" alt="${item.name}">
 
                     </div>
                     <div class="itemName">${item.name}</div>
@@ -154,11 +154,18 @@ const addToCartHTML = () => {
     }
 }
 
-const initApp = () => {
-    const basePath = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '');
 
-    fetch(`${basePath}/json/products.json`)
-        .then(response => response.json())
+
+const initApp = () => {
+    // fetch("/html/json/products.json")
+    const basePath = window.location.origin + "/html/json/products.json";
+    fetch(basePath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok " + response.statusText);
+            }
+            return response.json();
+        })
         .then(data => {
             listItems = data;
             addDataToHTML();
@@ -166,7 +173,13 @@ const initApp = () => {
         .catch(error => {
             console.error("Error fetching products:", error);
         });
-};
-
-
+    // .then(response => response.json())
+    //     .then(data => {
+    //         listItems = data;
+    //         addDataToHTML();
+    //     })
+    //     .catch(error => {
+    //         console.error("Error fetching products:", error);
+    //     });
+}
 initApp();
