@@ -152,17 +152,22 @@ const addToCartHTML = () => {
         });
     }
 }
-  
-const initApp = () => {
-    fetch("/html/json/products.json")
-    .then(response => response.json())
-    .then(data => {
-        listItems = data;
-        addDataToHTML();
-    })
-    .catch(error => {
-        console.error("Error fetching products:", error);
-    });
-}
-initApp();
 
+const initApp = () => {
+    const basePath = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '');
+
+    console.log(`${basePath}/html/json/products.json`);
+
+    fetch(`${basePath}/json/products.json`)
+        .then(response => response.json())
+        .then(data => {
+            listItems = data;
+            addDataToHTML();
+        })
+        .catch(error => {
+            console.error("Error fetching products:", error);
+        });
+};
+
+
+initApp();
