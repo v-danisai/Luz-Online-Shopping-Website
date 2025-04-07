@@ -121,8 +121,22 @@ function addToCart(id) {
     }
     addToCartHTML();
     addCartToMemory();
+    showToast();
     sumTotalPrice();
 }
+
+function showToast(message = "Item added successfully!") {
+    const toast = document.getElementById("toast");
+    toast.textContent = message;
+    toast.classList.remove("hidden");
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+        toast.classList.add("hidden");
+    }, 1000); // 1 second
+}
+
 
 const addCartToMemory = () => {
     localStorage.setItem("cart", JSON.stringify(carts));
@@ -219,6 +233,62 @@ const sumTotalPrice = () => {
 
     return total;
 };
+
+document.getElementById("purchaseButton").addEventListener("click", sendCartToWhatsApp);
+
+
+const extractCartDataForSubmission = () => {
+    let cartSummary = [];
+    let finalTotal = 0;
+
+    carts.forEach(cartItem => {
+        const product = listItems.find(p => p.id == cartItem.productId);
+        if (product) {
+            const itemTotal = parseFloat(product.price) * cartItem.quantity;
+            finalTotal += itemTotal;
+
+            cartSummary.push({
+                id: product.id,
+                name: product.name,
+                quantity: cartItem.quantity,
+                unitPrice: parseFloat(product.price),
+                totalPrice: itemTotal
+            });
+        }
+    });
+
+    return {
+        items: cartSummary,
+        grandTotal: finalTotal
+    };
+};
+
+function sendCartToWhatsApp() {
+    const cartData = extractCartDataForSubmission();
+    if (cartData.items.length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+    let message = "Hey! I want to order this items.:\n";
+
+    cartData.items.forEach((item, index) => {
+        message += `\n${index + 1}. ${item.name}\n`;
+        message += `   - Unit Price: $${item.unitPrice.toFixed(2)}\n`;
+        message += `   - Quantity: ${item.quantity}\n`;
+        message += `   - Total: $${item.totalPrice.toFixed(2)}\n`;
+    });
+
+    message += `\nTotal to Pay: $${cartData.grandTotal.toFixed(2)}\n\n`;
+    message += " Please confirm my order.";
+
+    const encodedMessage = encodeURIComponent(message);
+    const phoneNumber = "5016334169";
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappURL, "_blank");
+}
 
 const initApp = () => {
     fetch("./json/products.json")

@@ -139,6 +139,7 @@ footer {
     min-height: 30vw;
     margin-top: min(36px, 3.5%); 
     padding: min(18px, 2%); 
+    text-align: center;
 }
 #footerWrapper{
     font-size: clamp(12px, 1.5vw, 48px) !important;
@@ -151,6 +152,7 @@ footer {
 }
 #footerLogo{
     width: 25vw;
+    min-width: 145px;
 }
 .footerContainer{
     width: 30vw;
@@ -186,6 +188,12 @@ footer {
     align-content: center;
     color: white;
     font-size: clamp(0.85rem, 1.25vw, 2rem);
+}
+.designersLogo{
+    width: 7vw;
+    margin-top: min(16px, 2%);
+    margin-bottom: min(16px, 2%);
+    min-width: 65px;
 }
 /* Media query to ensure responsive design on extra small screens */
 @media(width<=576px){

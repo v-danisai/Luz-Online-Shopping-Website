@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name":" Female Accessories",
+        "name":" Male",
         "price": 140.56,
         "image": "./css/images/femaleAccessories.jpg",
         "desc": "Lorem ipsum dolor sit amet.",
@@ -9,10 +9,10 @@
     },
     {
         "id": 2,
-        "name":" Zair Villanueva",
+        "name":" Hat",
         "price": 0.01,
         "image": "./css/images/femaleAccessories.jpg",
-        "desc": "Bien Gay!",
+        "desc": "Straw Hat",
         "category": "Male"
     },
     {

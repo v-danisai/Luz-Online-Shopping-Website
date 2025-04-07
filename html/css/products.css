@@ -125,22 +125,45 @@ label{
 .closeButton{
     background-color: rgb(215, 2, 2); 
     color: white;
-    border: rgb(62, 61, 61) 2px solid;
     padding: min(8px, 4%);
     font-size: clamp(0.85rem, 1.25vw, 2.75vw);
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
     transition:  0.3s ease, transform 0.1s ease;
-    width: 80%;
+    width: 35%;
     margin-bottom: min(4px, 2%);
 }
 .closeButton:hover{
-    background-color: #ff0e26;
-    border: whitesmoke 2px solid;
+    background-color: #a10b1a;
+    border: white 2px solid;
+    transform: scale(0.95);
+    transition: 0.3s;
 }
 .closeButton:active{
     background-color: #a71d2a; 
+    transform: scale(0.95);
+}
+.purchaseButton{
+    background-color: rgb(88, 161, 5); 
+    color: white;
+    padding: min(8px, 4%);
+    font-size: clamp(0.85rem, 1.25vw, 2.75vw);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  0.3s ease, transform 0.1s ease;
+    width: 35%;
+    margin-bottom: min(4px, 2%);
+}
+.purchaseButton:hover{
+    background-color: #218838; 
+    border: white 2px solid;
+    transform: scale(0.95);
+    transition: 0.3s;
+}
+.purchaseButton:active{
+    background-color: #1e7e34; 
     transform: scale(0.95);
 }
 .basket{
@@ -169,6 +192,7 @@ label{
 }
 .itemPic{
     width: 20%;
+    object-fit: contain;
 }
 .infoContainer{
     flex: 5;
@@ -185,18 +209,40 @@ label{
     min-width: 3vw;
     background-color: #218838 !important;
     color: white;
+    border: green 2px solid;
     font-weight: 400;
 }
 .minus{
     border-radius: 50%;
     padding: min(4px, 2%);
     min-width: 3vw;
-    background-color: #a71d2a;
+    background-color: #ff2c41;
     color: white;
     font-weight: 400;
+    border : red 2px solid;
+}
+.plus:hover{
+    background-color: #007f1e;
+    border: white 2px solid;
+    transform: scale(0.95);
+    transition: 0.3s;
+}
+.minus:hover{
+    background-color: #a10b1a;
+    border: white 2px solid;
+    transform: scale(0.95);
+    transition: 0.3s;
+}
+.plus:active{
+    background-color: #01781c;
+    transform: scale(0.95);
+}
+.minus:active{
+    background-color: #9a000f;
+    transform: scale(0.95);
 }
 .emptyCartMessage{
-    font-size: clamp(0.75rem, 1.5vw, 4rem) !important;
+    font-size: clamp(0.75rem, 2vw, 4rem) !important;
     font-weight: 700;
     text-align: center;
     font-family: 'Merriweather', sans-serif;
@@ -332,6 +378,38 @@ h2{
     transform: scale(0.75);
     transition: 0.6s;
 }
+/*  */
+.toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #02bd0bc7 !important;
+    color: #fff !important;
+    border: whitesmoke 2px solid !important;
+    padding: min(16px, 2%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: clamp(0.75rem, 1.5vw, 2.75vw);
+    font-family: 'Merriweather', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 15;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    width: 25vw !important;
+    min-width: 150px !important;
+}
+.toast.show {
+    opacity: 1;
+}
+.toast.hidden {
+    display: none;
+}
+
+/*  */
+
 /* Media query for smaller screens */
 @media (width<=576px){
     #resultsContainer, .gridContainer {
@@ -341,7 +419,7 @@ h2{
         top: 350px;
     }
     #purchaseDialogue{
-        width: 80vw;
+        width: 90vw;
         height: 50vw;
     }
     #mainDialogueContainer{
@@ -349,7 +427,7 @@ h2{
     }
     #productContainer{
         text-align: center;
-        width: 90%;
+        width: 95%;
         overflow-y: auto;
         overflow-x: hidden;
         justify-content: center;
@@ -375,14 +453,6 @@ h2{
     .minus{
         min-width: 6vw;
     }
-    /*  */
-    /* .closeButton{
-        font-weight: bold;
-        border-radius: 5px;
-        cursor: pointer;
-        transition:  0.3s ease, transform 0.1s ease;
-        width: 80%;
-    } */
 }
 @media(width<=376px){
     .cartButton{
