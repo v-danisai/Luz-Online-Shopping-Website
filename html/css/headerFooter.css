@@ -33,7 +33,7 @@ header{
 #businessNameLink{
     text-decoration: none;
 }
-ul{
+/* ul{
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
@@ -55,13 +55,59 @@ a{
     text-decoration: none; 
     display: block; 
     font-size: clamp(16px, 1.5vw, 36px);
-    /* color: #3F4B83 !important; */
 }
 a:hover{
     color: blue !important;
     color: rgb(0, 55, 255) !important;
     transform: scale(1.1);
     transition: 0.3s;
+} */
+nav{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 50vw;
+    gap:8px;
+}
+.navButton{
+    display: inline-block;
+    font-size: clamp(1rem, 1.25vw, 2.5rem) !important;
+    text-decoration: none;
+    margin: 0;
+    padding-left: min(16px, 4%);
+    padding-right: min(16px, 4%);
+    padding-top: min(4px, 1%);
+    padding-bottom: min(4px, 1%);
+    background-color: white !important;
+    color: rgb(1, 99, 255) !important;
+    border: none;
+    border-radius: 150px;
+    transition: 0.3s;
+    font-size: clamp(12px, 1.5vw, 48px);
+    font-family: 'Satisfy';
+    text-align: center;
+    font-weight: 600;
+}
+.currNavButton{
+    color: white !important;
+    background-color: rgb(1, 99, 255) !important;
+    border: white solid 2px;
+}
+.navButton:hover{
+    background-color: rgb(0, 55, 255) !important;
+    color: white !important;
+    transform: scale(1.1);
+    transition: 0.3s;
+    border: white solid 2px;
+    box-shadow: 0px 0px 10px white;
+}
+.navButton:active{
+    transform: scale(0.9);
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px #0881A3;
+    background-color: white !important;
 }
 /* Headings */
 .heading1{
@@ -84,7 +130,7 @@ a:hover{
 
 /* Footer Css */
 footer {
-    background-color: #0881A3;
+    background-color: rgb(88, 202, 224);
     background-image: url('images/wave.png');
     border-top: black solid 2px;
     background-position: bottom center; 

@@ -2,13 +2,21 @@
     {
         "id": 1,
         "name":" Female Accessories",
-        "price": 140,
+        "price": 140.56,
         "image": "./css/images/femaleAccessories.jpg",
         "desc": "Lorem ipsum dolor sit amet.",
         "category": "Male"
     },
     {
         "id": 2,
+        "name":" Zair Villanueva",
+        "price": 0.01,
+        "image": "./css/images/femaleAccessories.jpg",
+        "desc": "Bien Gay!",
+        "category": "Male"
+    },
+    {
+        "id": 3,
         "name":" Male Accessories",
         "price": 535,
         "image": "./css/images/maleAccessories.jpg",
@@ -16,7 +24,7 @@
         "category": "Female"
     },
     {
-        "id": 3,
+        "id": 4,
         "name":" Key Chain",
         "price": 180,
         "image": "./css/images/keyChain.png",
@@ -24,7 +32,7 @@
         "category": "Kids"
     },
     {
-        "id": 4,
+        "id": 5,
         "name":" Rings",
         "price": 50,
         "image": "./css/images/rings.png",

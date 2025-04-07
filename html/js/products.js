@@ -66,7 +66,7 @@ const addDataToHTML = () => {
                     </div>
                     <div class="itemName">${item.name}</div>
                     <div class="itemInfo">
-                        <span class="price">${item.price}</span><br>
+                        <span class="price">$${item.price}</span><br>
                         <span class="description">${item.desc}</span>
                     </div>
                     <button class="buttonBackground" data-id="${item.id}">
@@ -121,6 +121,7 @@ function addToCart(id) {
     }
     addToCartHTML();
     addCartToMemory();
+    sumTotalPrice();
 }
 
 const addCartToMemory = () => {
@@ -160,6 +161,10 @@ const addToCartHTML = () => {
             listCartsHTML.appendChild(newCartItem);
         });
     }
+    if (carts.length === 0) {
+        listCartsHTML.innerHTML = `<p class="emptyCartMessage">Your cart is empty.</p>`;
+    }
+    
     iconCounter.innerHTML = totalQuantity;
 }
 
@@ -193,23 +198,47 @@ const changeQuantity = (id, type) => {
 
     addCartToMemory();
     addToCartHTML();
+    sumTotalPrice();
 }
+
+const sumTotalPrice = () => {
+    let total = 0;
+
+    carts.forEach(item => {
+        const product = listItems.find(p => p.id == item.productId);
+        if (product) {
+            total += parseFloat(product.price) * item.quantity;
+        }
+    });
+
+    // Optional: Format total price and display it in the DOM
+    const totalDisplay = document.querySelector(".totalCounter");
+    if (totalDisplay) {
+        totalDisplay.innerHTML = `Total: $${total.toFixed(2)}`;
+    }
+
+    return total;
+};
 
 const initApp = () => {
     fetch("./json/products.json")
-    .then(response => response.json())
+        .then(response => response.json())
         .then(data => {
             listItems = data;
-            addDataToHTML();
+            addDataToHTML(); // Display items
 
-            //get cart from memory
-            if(localStorage.getItem("cart")){
+            // Get cart from memory (localStorage)
+            if(localStorage.getItem("cart")) {
                 carts = JSON.parse(localStorage.getItem("cart"));
-                addToCartHTML();
             }
+
+            // Update cart HTML and the total price
+            addToCartHTML();
+            sumTotalPrice(); // Call this after loading the cart
         })
         .catch(error => {
             console.error("Error fetching products:", error);
         });
 }
+
 initApp();

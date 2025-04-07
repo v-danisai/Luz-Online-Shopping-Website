@@ -18,26 +18,21 @@
             </span>
           </a>
           <nav> 
-              <ul>
-                  <li>
-                      <a href="home.html">Home</a>
-                  </li>
-                  <!-- <li>
-                      <a href="#">Location</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact Us</a>
-                  </li> -->
-                  <li>
-                      <a href="about.html">About Us</a>
-                  </li>
-              </ul>
+            <button class="navButton" onclick="location.href='home.html'">
+              Home
+            </button>
+            <button class="navButton" onclick="location.href='about.html'">
+              About
+            </button>
+            <button class="navButton currNavButton" onclick="location.href='products.html'">
+              Products
+            </button>
           </nav>
-          <div class="cartCounter">
-            
-          </div>
         </div>
         <div id="searchContainer" id="searchNav">
+          <div class="totalCounter">
+
+          </div>
             <div id="exploreNow">
                 <marquee>
                     Explore The Categories!
@@ -51,6 +46,9 @@
             </form>
             <button id="openDialogue" class="openButton">
                 <img src="css/images/shoppingBasket.png" alt="Shopping Basket" class="basket">
+                <div class="cartCounter">
+                  <!-- item counter will go here -->
+                </div>
             </button>
         </div>
     </header>

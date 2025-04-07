@@ -3,6 +3,9 @@ body{
     margin: 0;
     height: 100vh;
 }
+ul{
+    list-style-type: none;
+}
 /* Headings */
 .heading1{
     font-size: clamp(16px, 4vw, 120px) !important;
