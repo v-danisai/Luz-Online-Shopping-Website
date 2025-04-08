@@ -76,6 +76,7 @@ li{
 .infoContainer{
     margin-top: min(32px, 4%);
     text-align: center;
+    padding: min(12px, 3%);
 }
 /* Contact Css */
 #contactHeadCont{
