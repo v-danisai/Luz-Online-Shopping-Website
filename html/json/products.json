@@ -1,42 +1,402 @@
 [
     {
-        "id": 1,
+        "id": 1001,
+        "name":" Minnie Mouse Set",
+        "price": 140.56,
+        "image": "./products/Bags/01_KB_Minnie_Mouse_Set.jpeg",
+        "desc": "Pink Minnie Mouse",
+        "category": "Bags"
+    },
+    {
+        "id": 1002,
+        "name":" Guess Black Bag",
+        "price": 140.56,
+        "image": "./products/Bags/02_WB_Guess_Black_Bag.jpeg",
+        "desc": "Black Bag",
+        "category": "Bags"
+    },
+    {
+        "id": 1003,
+        "name":" Female Bag",
+        "price": 140.56,
+        "image": "./products/Bags/03_WB_Pink.jpeg",
+        "desc": "Pink Bag",
+        "category": "Bags"
+    },
+    {
+        "id": 1004,
+        "name":" Mickie Mouse Bags",
+        "price": 140.56,
+        "image": "./products/Bags/04_KB_Mickey_Mouse.jpeg",
+        "desc": "Mickie Mouse Bag",
+        "category": "Bags"
+    },
+    {
+        "id": 1005,
+        "name":" Calvin Klein Bag",
+        "price": 140.56,
+        "image": "./products/Bags/05_WB_CK_Black_Bag.jpeg",
+        "desc": "Black Bag",
+        "category": "Bags"
+    },
+    {
+        "id": 2001,
         "name":" Male",
         "price": 140.56,
-        "image": "./css/images/femaleAccessories.jpg",
+        "image": "./products/Cosmetics/01_Kuromi_Makeup_Kit.jpeg",
         "desc": "Lorem ipsum dolor sit amet.",
-        "category": "Male"
+        "category": "Cosmetics"
     },
     {
-        "id": 2,
-        "name":" Hat",
-        "price": 0.01,
-        "image": "./css/images/femaleAccessories.jpg",
-        "desc": "Straw Hat",
-        "category": "Male"
-    },
-    {
-        "id": 3,
-        "name":" Male Accessories",
-        "price": 535,
-        "image": "./css/images/maleAccessories.jpg",
+        "id": 2002,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Cosmetics/02_Rice_Skincare_Set.jfif",
         "desc": "Lorem ipsum dolor sit amet.",
-        "category": "Female"
+        "category": "Cosmetics"
     },
     {
-        "id": 4,
-        "name":" Key Chain",
-        "price": 180,
-        "image": "./css/images/keyChain.png",
+        "id": 2003,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Cosmetics/03_Capybara_Brushes.jpeg",
         "desc": "Lorem ipsum dolor sit amet.",
-        "category": "Kids"
+        "category": "Cosmetics"
     },
     {
-        "id": 5,
-        "name":" Rings",
-        "price": 50,
-        "image": "./css/images/rings.png",
+        "id": 2004,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Cosmetics/04_Victoria_Secret_Perfumes.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Cosmetics"
+    },
+    {
+        "id": 2005,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Cosmetics/05_Victoria_Secret.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Cosmetics"
+    },
+    {
+        "id": 3001,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Drinkware/01_Pink_Stanley.jfif",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Drinkware"
+    },
+    {
+        "id": 3002,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Drinkware/02_Mini_Stanleys.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Drinkware"
+    },
+    {
+        "id": 3003,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Drinkware/03_Floral_Stanleys.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Drinkware"
+    },
+    {
+        "id": 3004,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Drinkware/04_Stitch_Stanleys_w Straws.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Drinkware"
+    },
+    {
+        "id": 3005,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Drinkware/05_Yeti_Thermos.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Drinkware"
+    },
+    {
+        "id": 3006,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Drinkware/06_Stitch_Stanleys.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Drinkware"
+    },
+    {
+        "id": 3007,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Drinkware/07_Kuromi_Stitch_Stanley_ w Straw.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Drinkware"
+    },
+    {
+        "id": 3008,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Drinkware/08_Mixed_Characters_Stanley.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Drinkware"
+    },
+    {
+        "id": 4001,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Footwear/01_Men_White_Footwear.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Footwear"
+    },
+    {
+        "id": 5001,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Jewelry/01_Hoop_Earrings.jpeg",
         "desc": "Lorem ipsum dolor sit amet.",
         "category": "Jewelry"
+    },
+    {
+        "id": 5002,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Jewelry/02_Long_Earrings.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Jewelry"
+    },
+    {
+        "id": 5003,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Jewelry/03_Male_Necklace.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Jewelry"
+    },
+    {
+        "id": 5004,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Jewelry/04_Red_Earrings _Necklace_Set.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Jewelry"
+    },
+    {
+        "id": 6001,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Mirrors/01_Heart_Mirrors.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Kitchenware"
+    },
+    {
+        "id": 7001,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Mirrors/01_Heart_Mirrors.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Mirrors"
+    },
+    {
+        "id": 8001,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/01_Pink_Stripped_Burberry_Bag.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 8002,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/02_Coach_Pink_Cherry_Purse.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 8003,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/03_Coach_Dark_Brown_Purse.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 8004,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/04_Coach_Pink_Purse.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 8005,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/05_Coach_Black_Bag.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 8006,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/06_Coach_White_Cherry_Purse.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 8007,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/07_Sm_Nude_ShoulderBag.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 8008,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/08_Coach_Beige_Wristlet.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 8009,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/09_Coach_Red_Purse.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 80010,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/10_Coach_Brown_Purse.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 80011,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/11_Men_Crossbody_Bag.jfif",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 80012,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/12_MK_White_Bag_Set.jfif",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 80013,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/13_Coach_HandBags.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 80014,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Purses/14_Coach_SlingBags.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Purses"
+    },
+    {
+        "id": 9001,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Sets/01_Light_Blue_Set.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Sets"
+    },
+    {
+        "id": 10001,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Wallets/01_Coach_Brown_Cherry_Wristlet.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Wallets"
+    },
+    {
+        "id": 10002,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Wallets/02_Coach_Pink_Cherry_Wristlet_a CardHolder.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Wallets"
+    },
+    {
+        "id": 10003,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Wallets/03_Coach_Heart_Wallets.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Wallets"
+    },
+    {
+        "id": 10004,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Wallets/04_D_Wallets.jfif",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Wallets"
+    },
+    {
+        "id": 10005,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Wallets/05_Coach_Brown_Beige_Wallets.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Wallets"
+    },
+    {
+        "id": 10006,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Wallets/06_6_Wallets.jpg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Wallets"
+    },
+    {
+        "id": 11001,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Watches/01_Men_Gold_Watches.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Watches"
+    },
+    {
+        "id": 11002,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Watches/02_Kids_Watches_Colours.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Watches"
+    },
+    {
+        "id": 11003,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Watches/03_Men_Silver_Watches.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Watches"
+    },
+    {
+        "id": 11004,
+        "name":" Male",
+        "price": 140.56,
+        "image": "./products/Watches/04_Men_Silver_Watch.jpeg",
+        "desc": "Lorem ipsum dolor sit amet.",
+        "category": "Watches"
     }
 ]

@@ -297,6 +297,16 @@ const initApp = () => {
             listItems = data;
             addDataToHTML(); // Display items
 
+            const hash = window.location.hash;  // Get the hash from URL
+            if (hash) {
+                const target = document.querySelector(hash);  // Find the target element
+                if (target) {
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: "smooth" });
+                    }, 100); // Optionally delay to ensure rendering is finished
+                }
+            }
+
             // Get cart from memory (localStorage)
             if(localStorage.getItem("cart")) {
                 carts = JSON.parse(localStorage.getItem("cart"));

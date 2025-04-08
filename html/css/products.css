@@ -306,8 +306,10 @@ h2{
     background-color: rgb(176, 252, 244);
 }
 .itemImage{
-    width: 100%;
     object-fit: cover;
+    height: 20vw;
+    min-height: 75px;
+    min-width: 85px;
 }
 .itemName{
     font-family: sans-serif;
