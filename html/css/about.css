@@ -38,7 +38,7 @@ li{
     gap: min(48px, 4%);
     align-items: center;
     justify-content: space-evenly;
-    /* background-image: linear-gradient(90deg, #ecf2fbf5,  #0881A3); */
+    background-color: rgba(110, 228, 210, 0.478);
 }
 #topTextContainer{
     width: 45vw;
@@ -63,7 +63,7 @@ li{
 #midInfoContainer{
     overflow:scroll;
     flex: 5;
-    height: 25vw;
+    height: 40vw;
     min-width: 320px;
 }
 .midImage{

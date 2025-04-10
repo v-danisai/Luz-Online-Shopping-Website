@@ -182,6 +182,7 @@ const addToCartHTML = () => {
     iconCounter.innerHTML = totalQuantity;
 }
 
+
 listCartsHTML.addEventListener('click', (event) => {
     if (event.target.classList.contains("minus") || event.target.classList.contains("plus")) {
         const cartItem = event.target.closest(".cartItem");
@@ -265,10 +266,47 @@ const extractCartDataForSubmission = () => {
 
 function sendCartToWhatsApp() {
     const cartData = extractCartDataForSubmission();
+    // if (cartData.items.length === 0) {
+    //     $.confirm({
+    //         title: 'Cart is Empty!',
+    //         content: 'You need to add items before sending your order to WhatsApp.',
+    //         type: 'red',
+    //         typeAnimated: true,
+    //         buttons: {
+    //             goShop: {
+    //                 text: 'Go to Shop',
+    //                 btnClass: 'btn-red',
+    //                 action: function () {
+    //                     dialog.showModal(); // open your product dialog
+    //                 }
+    //             },
+    //             close: function () {}
+    //         }
+    //     });
+    //     return;
+    // }
+
     if (cartData.items.length === 0) {
-        alert("Your cart is empty!");
+
+        if (dialog.open) dialog.close();
+    
+        $.confirm({
+            title: 'Cart is Empty!',
+            content: 'You need to add items before sending your order to WhatsApp.',
+            type: 'red',
+            typeAnimated: true,
+            boxWidth: '35vw',
+            useBootstrap: false, 
+            buttons: {
+                goShop: {
+                    text: 'Okay',
+                    btnClass: 'btn-red',
+                    close: function () {}
+                }
+            }
+        });
         return;
-    }
+    }    
 
     let message = "Hey! I want to order this items.:\n";
 
@@ -283,12 +321,12 @@ function sendCartToWhatsApp() {
     message += " Please confirm my order.";
 
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = "5016334169";
+    const phoneNumber = "5016558098";
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-    // Redirect to WhatsApp
     window.open(whatsappURL, "_blank");
 }
+
 
 const initApp = () => {
     fetch("./json/products.json")
@@ -320,6 +358,5 @@ const initApp = () => {
             console.error("Error fetching products:", error);
         });
 }
-
 
 initApp();
