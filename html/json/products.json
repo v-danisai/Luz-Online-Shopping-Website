@@ -1,210 +1,210 @@
 [
     {
         "id": 1001,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Backpack",
+        "price": 28,
         "image": "./products/categories/Bags/v2_black_bag.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Black ",
         "category": "Bags & Purses"
     },
     {
         "id": 1002,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Coach Purse",
+        "price": 40,
         "image": "./products/categories/Bags/v2_black_coach_purse.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Brown and Black",
         "category": "Bags & Purses"
     },
     {
         "id": 1003,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Coach Bag",
+        "price": 40,
         "image": "./products/categories/Bags/v2_coach_beige_bckpack.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Beige",
         "category": "Bags & Purses"
     },
     {
         "id": 1004,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Coach Purse",
+        "price": 18,
         "image": "./products/categories/Bags/v2_coach_heart_purses_design.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Heart Shaped",
         "category": "Bags & Purses"
     },
     {
         "id": 1005,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Coach Purse",
+        "price": 18,
         "image": "./products/categories/Bags/v2_coach_heart_purses.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Heart Red, Black, White",
         "category": "Bags & Purses"
     },
     {
         "id": 1006,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Coach Hand Purse",
+        "price": 35,
         "image": "./products/categories/Bags/v2_coach_redstrap_bag.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Brown and Dark Orange",
         "category": "Bags & Purses"
     },
     {
         "id": 1007,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Coach Bag",
+        "price": 60,
         "image": "./products/categories/Bags/v2_coach_set.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Black",
         "category": "Bags & Purses"
     },
     {
         "id": 1008,
-        "name":" Minnie Mouse Set",
+        "name":" Coach Purse",
         "price": 45,
         "image": "./products/categories/Bags/v2_coach_slingbag.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Beige and Brown",
         "category": "Bags & Purses"
     },
     {
         "id": 1009,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Coach Purse",
+        "price": 60,
         "image": "./products/categories/Bags/v2_coach_strawberry_slingbag.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Strawberry",
         "category": "Bags & Purses"
     },
     {
         "id": 10010,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Dior Purse",
+        "price": 40,
         "image": "./products/categories/Bags/v2_dior_pink_shoulderbag.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Pink",
         "category": "Bags & Purses"
     },
     {
         "id": 10011,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Samsung Travel Bag",
+        "price": 25,
         "image": "./products/categories/Bags/v2_purple_travel_bag.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Purple",
         "category": "Bags & Purses"
     },
     {
         "id": 10012,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Hand Purses",
+        "price": 28,
         "image": "./products/categories/Bags/v2_shoulder_hand_bag_Set.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Color Variety",
         "category": "Bags & Purses"
     },
     {
         "id": 10013,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Steven Madden Purses",
+        "price": 35,
         "image": "./products/categories/Bags/v2_SM_colorful_set.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Pink, Blue, White",
         "category": "Bags & Purses"
     },
     {
         "id": 10014,
-        "name":" Minnie Mouse Set",
+        "name":" Steven Madden Set",
         "price": 45,
         "image": "./products/categories/Bags/v2_SM_Purple_shoulder_bag.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Purple",
         "category": "Bags & Purses"
     },
     {
         "id": 10015,
-        "name":" Minnie Mouse Set",
+        "name":" Coach Hand Purse",
         "price": 45,
         "image": "./products/categories/Bags/v2_white_brown_coach_purse.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "White and Beige",
         "category": "Bags & Purses"
     },
     {
         "id": 10016,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Purse and Perfume Combo",
+        "price": 60,
         "image": "./products/categories/Bags/v2_white_coach_set.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "White Kisses",
         "category": "Bags & Purses"
     },
     {
         "id": 2001,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Stanley Thermos",
+        "price": 60,
         "image": "./products/categories/Drinkware2/v2_30oz_Marble_Stanley.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Blue and Pink",
         "category": "Drinkware"
     },
     {
         "id": 2002,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Stanley Cups",
+        "price": 55,
         "image": "./products/categories/Drinkware2/V2_Aqua_Stanley_Set.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Turquoise",
         "category": "Drinkware"
     },
     {
         "id": 2003,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Kids Thermos",
+        "price": 28,
         "image": "./products/categories/Drinkware2/V2_Kids_Cartoons_Stanley.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Cartoons",
         "category": "Drinkware"
     },
     {
         "id": 2004,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Stanley Cups",
+        "price": 35,
         "image": "./products/categories/Drinkware2/V2_Stanley_Desings.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Variety",
         "category": "Drinkware"
     },
     {
         "id": 3001,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Fruits Keychains",
+        "price": 12,
         "image": "./products/categories/Females/V2_Cherry_Keychains.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Strawberry, Cherry, Fruits",
         "category": "Female Accessories"
     },
     {
         "id": 3002,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Hair Clips",
+        "price": 3,
         "image": "./products/categories/Females/V2_Flower_Hair_Clips.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Colerful Flowers",
         "category": "Female Accessories"
     },
     {
         "id": 3003,
-        "name":" Minnie Mouse Set",
+        "name":" Stainless Steel Watch",
         "price": 45,
         "image": "./products/categories/Females/V2_Women_Gold_Watches.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Small Brown and Red",
         "category": "Female Accessories"
     },
     {
         "id": 4001,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Wrist Watches",
+        "price": 40,
         "image": "./products/categories/Males/V2_Gold_Silver_Watches_Male.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Male Colors",
         "category": "Male Accessories"
     },
     {
         "id": 4002,
-        "name":" Minnie Mouse Set",
+        "name":" Rolex Watches",
         "price": 45,
         "image": "./products/categories/Males/V2_Male_Silver_Gold_Watches.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Silver and Gold",
         "category": "Male Accessories"
     },
     {
         "id": 4003,
-        "name":" Minnie Mouse Set",
-        "price": 45,
+        "name":" Salcoo Watch",
+        "price": 35,
         "image": "./products/categories/Males/V2_Male_Silver_Watches.jpeg",
-        "desc": "Pink Minnie Mouse",
+        "desc": "Silver, Navy Blue, Gold",
         "category": "Male Accessories"
     }
 ]
